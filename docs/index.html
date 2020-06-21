@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Mock</title>
 </head>
 <body>
-    
+    <div id="app">
+        <form>
+            <div class="columns">
+                <div class="column is-half">
+                    <label>Source</label>
+                    <textarea class="textarea" v-model="st"></textarea>
+                </div>
+                <div class="column is-half">
+                    <label>Source</label>
+                    <textarea class="textarea"v-model=tt></textarea>
+                </div>
+            </div>
+            <button class="button" @click.prevent.stop="submitSource">Translate</button>
+        </form>
+        <button class="button" onclick="submit2()">Translate2</button>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>
