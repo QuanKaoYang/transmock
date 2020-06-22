@@ -12,12 +12,12 @@
         <form>
             <div class="columns">
                 <div class="column is-half">
-                    <label>Source</label>
+                    <label class="label">Source</label>
                     <textarea class="textarea" v-model="st"></textarea>
                 </div>
                 <div class="column is-half">
-                    <label>Source</label>
-                    <textarea class="textarea"v-model=tt></textarea>
+                    <label class="label">Target</label>
+                    <textarea class="textarea" readonly v-model=tt></textarea>
                 </div>
             </div>
             <button class="button is-primary is-fullwidth" @click.prevent.stop="submitSource">Translate</button>
